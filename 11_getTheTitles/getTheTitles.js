@@ -1,10 +1,7 @@
 const getTheTitles = function(array) {
-    let newArray = [];
-
-    function title(x) {
-        return x.title;
-    }
-    newArray = array.map(title);
+    let newArray = array.map((item) => {
+        return item.title;
+    });
 
     return newArray;
 };
